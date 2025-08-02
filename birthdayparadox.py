@@ -4,9 +4,9 @@ More info at https://en.wikipedia.org/wiki/Birthday_problem
 4. View this code at https://nostarch.com/big-book-small-python-projects
 5. Tags: short, math, simulation """
 
-import datetime, random
+import datetime, random  # Step 1 import
 
-
+# Step 2 get number of Random birthdays 
 def getBirthdays(numberOfBrithdays):
     """Returns a list of random date objects for birthdays."""
     birthdays = []
@@ -21,7 +21,7 @@ def getBirthdays(numberOfBrithdays):
         birthdays.append(birthday)
     return birthdays
 
-
+# Step 3 get Matching birthdays from random birthdays
 def getMatch(birthdays):
     '''Return the date object of a birthday that occurs more than onece
     in the birthdays lis.'''
